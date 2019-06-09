@@ -3,8 +3,8 @@
 
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-91594404-3"></script>
-  <script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-91594404-3"></script>
+    <script>
     window.dataLayer = window.dataLayer || [];
 
     function gtag() {
@@ -14,27 +14,25 @@
 
     gtag('config', 'UA-91594404-3');
   </script>
-
+  <!-- END GOOGLE ANALYTICS -->
   <meta charset="utf-8">
-  <!-- Font -->
-  <link href="https://fonts.googleapis.com/css?family=MedievalSharp" rel="stylesheet">
-  <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
-  <!-- Crypto Icons -->
-  <link rel="stylesheet" href="css/cryptofont.min.css">
   <!-- Style Sheet -->
   <link rel="stylesheet" href="css/main.css">
+  <!-- Medieval Font from Google CDN -->
+  <link href="https://fonts.googleapis.com/css?family=MedievalSharp" rel="stylesheet">
+  <!-- Font Awesome Icons from CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
+  <!-- Local Loaded Crypto Icons -->
+  <link rel="stylesheet" href="css/cryptofont.min.css">
   <!-- Responsive Viewport -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
   <!-- Auto Refresh -->
   <!-- <meta http-equiv="refresh" content="3" > -->
   <title>The Official Home of Magog of Morskar</title>
 </head>
 
 <body>
-
   <!--HERO -->
   <section class="hero">
     <video src="graphics/magog.mp4" autoplay loop poster="graphics/banner.png">
@@ -44,8 +42,9 @@
   </section>
   <!-- END HERO -->
 
-  <!-- PAYPAL SUBSCRIPTION BOX -->
+  <!-- PAYMENTS BOX -->
   <section class="pay">
+    <!-- PAYPAL SUBCRIPTION BOX -->
     <div class="paypal">
       <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
         <input type="hidden" name="cmd" value="_s-xclick">
@@ -76,34 +75,29 @@
         <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
       </form>
     </div>
+    <!-- END PAYPAL SUBSCRIPTION BOX -->
 
+    <!-- CRYPTO ADDRESSES -->
     <div class="crypto">
       <div class="crypto-grid">
-        <i class="crypto-icon cf cf-btc"></i>
+        <i class="cf cf-btc"></i>
         <p>1Crki9jLpVZSkRRXL42TXibVUQn7N3U7ow</p>
-        <i class="crypto-icon cf cf-btc-alt"></i>
+        <i class="cf cf-btc-alt"></i>
         <p>qq7ap8sjjeq6elpenmt9d6manha5u5c7jynsvvrfzj</p>
-
-        <i class="crypto-icon fab fa-ethereum"></i>
+        <i class="fab fa-ethereum"></i>
         <p>0xe6398a9B2BA3aAAE7Bd28D56fBfFb6b759030082</p>
-        <i class="crypto-icon cf cf-ltc"></i>
+        <i class="cf cf-ltc"></i>
         <p>LYYQ3jEP4UPwKa239cWVsaz3HDXoayQhJi</p>
-        <i class="crypto-icon cf cf-xrp"></i>
+        <i class="cf cf-xrp"></i>
         <p>rarFMMF4LNFMiZdKakxUUEHuv6PNAKJ2u8</p>
       </div>
     </div>
-
+    <!-- END CRYPTO ADDRESSES -->
   </section>
-  <!-- END PAYPAL SUBSCRIPTION BOX -->
+  <!-- END PAYMENTS BOX -->
 
   <!-- MAIN NAVIGATION LINKS -->
   <section class="nav">
-    <a href="#" target="_blank">
-      <div class="nav-item">
-        <i class="icon fas fa-shopping-cart"></i>
-        <p>Pay your dues and buy some swag!</p>
-      </div>
-    </a>
     <a href="https://twitter.com/magog_morskar" target="_blank">
       <div class="nav-item">
         <i class="icon fab fa-twitter"></i>
@@ -135,6 +129,12 @@
       <div class="nav-item">
         <i class="icon fas fa-lightbulb"></i>
         <p>Share your thoughts with everyone on <strong>Minds</strong></p>
+      </div>
+    </a>
+    <a href="#" target="_blank">
+      <div class="nav-item">
+        <i class="icon fas fa-shopping-cart"></i>
+        <p>Pay your dues and buy some swag!</p>
       </div>
     </a>
   </section>

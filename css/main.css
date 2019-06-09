@@ -18,7 +18,7 @@ body {
   display: grid;
   grid-template-areas:
     "hero"
-    "sub"
+    "pay"
     "nav"
     "foot";
   grid-row-gap: 4rem;
@@ -64,16 +64,42 @@ h4 {
   height: auto;
 }
 
-/* SUBSCRIPTION BOX */
-.sub {
-  grid-area: sub;
-}
-
-.sub-overlay {
+/* PAYMENTS BOX */
+.pay {
+  grid-area: pay;
+  display: grid;
+  grid-template-areas:
+    "paypal crypto";
+  grid-template-columns: 1fr 1fr;
   background-color: rgba(0, 0, 0, 0.5);
   margin: auto;
-  max-width: 60%;
-  min-width: 300px;
+}
+
+.paypal {
+  grid-area: paypal;
+  align-self: center;
+}
+
+.crypto {
+  grid-area: crypto;
+  align-self: center;
+}
+
+.crypto p {
+  text-align: left;
+}
+
+.crypto-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 1rem;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.crypto-icon {
+  padding: 10px;
+  font-size: 3rem;
 }
 
 /* NAVIGATION */

@@ -127,6 +127,9 @@ h4 {
   align-items: center;
   font-size: 1.5rem;
 }
+.nav-item strong {
+  text-transform: uppercase;
+}
 .nav-item:hover {
   background-color: rgba(109, 176, 96, 0.2);
 }

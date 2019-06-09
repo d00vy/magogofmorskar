@@ -30,13 +30,13 @@ body {
 
 /* HEADERS */
 h2 {
-  font-size: 1.5em;
+  font-size: 1.7em;
   text-transform: uppercase;
   letter-spacing: 0.188em;
 }
 
 h3 {
-  font-size: 1.2em;
+  font-size: 1.5em;
   text-transform: uppercase;
   letter-spacing: 0.188em;
 }
@@ -70,7 +70,7 @@ h4 {
 }
 
 .sub-overlay {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.5);
   margin: auto;
   max-width: 60%;
   min-width: 300px;
@@ -86,7 +86,6 @@ h4 {
 
 .nav-item {
   display: grid;
-  grid-template-rows: repeat(auto-fit);
   grid-template-columns: 25% 1fr;
   border: 1px solid black;
   border-radius: 1rem;
@@ -106,7 +105,7 @@ h4 {
 
 .icon {
   padding: 10px;
-  font-size: 3.7rem;
+  font-size: 4rem;
 }
 
 .icon:hover {

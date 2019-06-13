@@ -1,164 +1,190 @@
-@charset "utf-8";
+@charset "utf-8"; /* FONT AND COLOR */
 
-/* FONT AND COLOR */
 html {
   font-family: 'MedievalSharp', cursive;
-  text-align: center;
-  color: #a9a9b3;
+  text-align : center;
+  color      : #a9a9b3;
 }
 
 body {
   /* BACKGROUND */
-  background-image: url("../graphics/stones-dark.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+  background-image     : url("../graphics/stones-dark.jpg");
+  background-repeat    : no-repeat;
+  background-size      : cover;
   background-attachment: fixed;
   /* BODY GRID CONTAINER */
-  display: grid;
-  grid-template-areas:
-    "hero"
-    "pay"
-    "nav"
-    "foot";
-  grid-row-gap: 4rem;
-  grid-column-gap: 1rem;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
+  display              : grid;
+  grid-template-columns: repeat(1fr);
+  grid-template-areas  :
+  ". hero ."
+  ". pay ."
+  ". nav. "
+  "foot foot foot";
+  grid-row-gap         : 4rem;
+  grid-column-gap      : 1rem;
+  margin               : 0;
 }
-
 /* HEADERS FORMATTING */
+
 h2 {
-  font-size: 1.7em;
+  font-size     : 1.7em;
   text-transform: uppercase;
   letter-spacing: 0.188em;
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size     : 1.5em;
   text-transform: uppercase;
   letter-spacing: 0.188em;
 }
 
 h4 {
-  font-size: 1em;
+  font-size     : 1em;
   text-transform: uppercase;
   letter-spacing: 0.188em;
 }
-
 /* HERO */
+
 .hero {
-  grid-area: hero;
+  grid-area : hero;
   margin-top: 100px;
+}
+
+.iframe-container {
+  overflow: hidden;
+  width      : 100%;
+  height     : 0;
+  padding-top: 56.25%;
+  position   : relative;
+}
+
+.iframe-container iframe {
+  position: absolute;
+  left    : 0;
+  top     : 0;
+  width   : 100%;
+  height  : 100%;
+  border  : 0;
+}
+/* 4x3 Aspect Ratio */
+.iframe-container-4x3 {
+  padding-top: 75%;
 }
 
 .hero video {
   min-width: 480px;
   max-width: 50%;
-  height: auto;
+  height   : auto;
 }
 
 .hero img {
   max-width: 50%;
-  height: auto;
+  height   : auto;
 }
-
 /* PAYMENTS BOX */
-.pay {
-  grid-area: pay;
-  display: grid;
-  grid-template-areas:
-    "paypal"
-    "crypto";
-  grid-template-rows: 1fr 1fr;
-  background-color: rgba(0, 0, 0, 0.5);
-  margin: auto;
 
+.pay {
+  grid-area          : pay;
+  display            : grid;
+  grid-template-areas: "paypal" "crypto";
+  grid-template-rows : 1fr 1fr;
+  background-color   : rgba(0, 0, 0, 0.5);
+  margin             : auto;
 }
 /* PAYPAL CONTAINER */
+
 .paypal {
-  grid-area: paypal;
+  grid-area : paypal;
   align-self: center;
 }
 /* CRYPTO CONTAINER */
+
 .crypto {
-  grid-area: crypto;
+  grid-area : crypto;
   align-self: center;
 }
+
 .crypto p {
   text-align: left;
 }
 /* GRID FOR ADDRESSES */
+
 .crypto-grid {
-  display: grid;
+  display              : grid;
   grid-template-columns: 1fr 5fr;
-  padding: 1rem;
-  align-items: center;
-  font-size: 1.2rem;
+  padding              : 1rem;
+  align-items          : center;
+  font-size            : 1.2rem;
 }
+
 .crypto-grid i {
   font-size: 2.8rem;
 }
+
 .crypto-grid i:hover {
   -webkit-transform: scale(1.15);
-  -ms-transform: scale(1.15);
-  transform: scale(1.15);
-  color: #6db060;
-  opacity: 0.7;
+  -ms-transform    : scale(1.15);
+  transform        : scale(1.15);
+  color            : #6db060;
+  opacity          : 0.7;
 }
-
 /* NAVIGATION CONTAINER */
+
 .nav {
   grid-area: nav;
-  display: grid;
-  grid-gap: 2rem;
-  margin: auto;
+  display  : grid;
+  grid-gap : 2rem;
+  margin   : auto;
 }
 /* NAV BUTTONS */
+
 .nav-item {
-  display: grid;
+  display              : grid;
   grid-template-columns: 25% 1fr;
-  border: 1px solid black;
-  border-radius: 1rem;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 1rem;
-  align-items: center;
-  font-size: 1.5rem;
+  border               : 1px solid black;
+  border-radius        : 1rem;
+  background-color     : rgba(0, 0, 0, 0.5);
+  padding              : 1rem;
+  align-items          : center;
+  font-size            : 1.5rem;
 }
+
 .nav-item strong {
   text-transform: uppercase;
 }
+
 .nav-item:hover {
   background-color: rgba(109, 176, 96, 0.2);
 }
-.nav-item:hover i, .nav-item:hover strong {
+
+.nav-item:hover i,
+.nav-item:hover strong {
   color: black;
 }
 
 .icon {
-  padding: 10px;
+  padding  : 10px;
   font-size: 4rem;
 }
 
 .icon:hover {
   -webkit-transform: scale(1.15);
-  -ms-transform: scale(1.15);
-  transform: scale(1.15);
+  -ms-transform    : scale(1.15);
+  transform        : scale(1.15);
 }
 
 .nav a {
   text-decoration: none;
-  color: #a9a9b3;
+  color          : #a9a9b3;
 }
-
 /* FOOTER  */
+
 .footer {
   background-color: rgba(0, 0, 0, 0.7);
-  grid-area: foot;
-  margin-top: 150px;
-  bottom: 0;
-  padding: 15px;
+  grid-area       : foot;
+  margin-top      : 150px;
+  bottom          : 0;
+  padding         : 15px;
 }
 
 .copy {
@@ -166,11 +192,11 @@ h4 {
 }
 
 .copy a {
-  color: #a9a9b3;
+  color                : #a9a9b3;
   text-decoration-style: dotted;
 }
 
 .copy a:hover {
-  color: #6db060;
+  color                : #6db060;
   text-decoration-style: dotted;
 }

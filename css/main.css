@@ -1,5 +1,5 @@
-@charset "utf-8"; /* FONT AND COLOR */
-
+@charset "utf-8";
+/* FONT AND COLOR */
 html {
   font-family: 'MedievalSharp', cursive;
   text-align : center;
@@ -15,17 +15,12 @@ body {
   /* BODY GRID CONTAINER */
   display              : grid;
   grid-template-columns: repeat(1fr);
-  grid-template-areas  :
-  ". hero ."
-  ". pay ."
-  ". nav. "
-  "foot foot foot";
+  grid-template-areas  : ". hero ." ". pay ." ". nav. " "foot foot foot";
   grid-row-gap         : 4rem;
   grid-column-gap      : 1rem;
   margin               : 0;
 }
 /* HEADERS FORMATTING */
-
 h2 {
   font-size     : 1.7em;
   text-transform: uppercase;
@@ -44,14 +39,13 @@ h4 {
   letter-spacing: 0.188em;
 }
 /* HERO */
-
 .hero {
   grid-area : hero;
   margin-top: 100px;
 }
 
 .iframe-container {
-  overflow: hidden;
+  overflow   : hidden;
   width      : 100%;
   height     : 0;
   padding-top: 56.25%;
@@ -67,6 +61,7 @@ h4 {
   border  : 0;
 }
 /* 4x3 Aspect Ratio */
+
 .iframe-container-4x3 {
   padding-top: 75%;
 }
@@ -82,7 +77,6 @@ h4 {
   height   : auto;
 }
 /* PAYMENTS BOX */
-
 .pay {
   grid-area          : pay;
   display            : grid;
@@ -90,15 +84,18 @@ h4 {
   grid-template-rows : 1fr 1fr;
   background-color   : rgba(0, 0, 0, 0.5);
   margin             : auto;
+  padding            : 1rem;
 }
 /* PAYPAL CONTAINER */
-
 .paypal {
   grid-area : paypal;
   align-self: center;
 }
-/* CRYPTO CONTAINER */
 
+.paypal select {
+  font-weight: bold;
+}
+/* CRYPTO CONTAINER */
 .crypto {
   grid-area : crypto;
   align-self: center;
@@ -107,8 +104,12 @@ h4 {
 .crypto p {
   text-align: left;
 }
-/* GRID FOR ADDRESSES */
 
+.crypto p:hover {
+  color  : #6db060;
+  opacity: 0.7;
+}
+/* GRID FOR ADDRESSES */
 .crypto-grid {
   display              : grid;
   grid-template-columns: 1fr 5fr;
@@ -129,7 +130,6 @@ h4 {
   opacity          : 0.7;
 }
 /* NAVIGATION CONTAINER */
-
 .nav {
   grid-area: nav;
   display  : grid;
@@ -137,7 +137,6 @@ h4 {
   margin   : auto;
 }
 /* NAV BUTTONS */
-
 .nav-item {
   display              : grid;
   grid-template-columns: 25% 1fr;
@@ -178,7 +177,6 @@ h4 {
   color          : #a9a9b3;
 }
 /* FOOTER  */
-
 .footer {
   background-color: rgba(0, 0, 0, 0.7);
   grid-area       : foot;

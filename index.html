@@ -1,358 +1,342 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <!-- Basic Metatags    -->
-    <meta charset="utf-8" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
 
-    <!-- Responsive Viewport -->
-    <meta name=”viewport” content=”width=device-width, initial-scale=1, shrink-to-fit=no”>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<head>
+  <!-- Basic Metatags    -->
+  <meta charset="utf-8" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
 
-    <!-- Bootstrap CSS CDN -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
+  <!-- Responsive Viewport -->
+  <meta name=”viewport” content=”width=device-width, initial-scale=1, shrink-to-fit=no”>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <!-- Medieval Font from Google CDN -->
-    <link href="https://fonts.googleapis.com/css?family=MedievalSharp&display=swap" rel="stylesheet" />
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
 
-    <!-- Font Awesome Icons from CDN -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
-      integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E"
-      crossorigin="anonymous"
-    />
+  <!-- Medieval Font from Google CDN -->
+  <link href="https://fonts.googleapis.com/css?family=MedievalSharp&display=swap" rel="stylesheet" />
 
-    <!-- Local Loaded Crypto Icons -->
-    <link rel="stylesheet" href="css/cryptofont.min.css" />
+  <!-- Font Awesome Icons from CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
+    integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous" />
 
-    <!-- FAVICONS -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/graphics/favicon/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/graphics/favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/graphics/favicon/favicon-16x16.png" />
-    <link rel="manifest" href="/graphics/favicon/site.webmanifest" />
-    <title>The Official Home of Magog of Morskar</title>
+  <!-- Local Loaded Crypto Icons -->
+  <link rel="stylesheet" href="css/cryptofont.min.css" />
 
-    <!-- Custom Style Sheet -->
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body class="text-center">
-    <!-- Header w/ video embed -->
-    <header class="container mt-5">
-      <div class="embed-responsive embed-responsive-16by9">
-        <iframe
-          src="https://www.youtube-nocookie.com/embed/HaY98T6TDxw"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </div>
-    </header>
+  <!-- FAVICONS -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/graphics/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/graphics/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/graphics/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="/graphics/favicon/site.webmanifest" />
+  <title>The Official Home of Magog of Morskar</title>
 
-    <!-- PAYMENTS -->
-    <section id="payments" class="container my-3 py-4">
-      <div class="row justify-content-center">
-        <div class="col-lg-6 overlay py-4">
-          <h2>Payment Offerings</h2>
-          <!-- NAV TABS -->
-          <ul class="nav nav-tabs justify-content-center" role="tablist">
-            <li class="nav-item">
-              <a class="nav-link active" data-toggle="tab" href="#paypal" role="tab">PAYPAL</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#substar" role="tab">SUBSCRIBE STAR</a>
-              </li>
-            <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" href="#crypto" role="tab">CRYPTO</a>
-            </li>
-          </ul>
-          <!-- TAB PANES and CONTENT -->
-          <div class="tab-content my-3">
-            <!-- paypal tab -->
-            <div class="tab-pane fade show active container" id="paypal" role="tabpanel" aria-labelledby="paypal-tab">
-              <!-- PAYPAL SUBSCRIPTION BOX  -->
-              <div id="paypal">
-                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                  <input type="hidden" name="cmd" value="_s-xclick" />
-                  <input type="hidden" name="hosted_button_id" value="RA3FLVQZMH22G" />
-                  <table align="center">
-                    <tr>
-                      <td>
-                        <input type="hidden" name="on0" value="Payment Offerings" />
-                        <h4 class="pb-3">PayPal</h4>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <select name="os0">
-                          <option value="Offering 1">Offering 1 : $1.00 USD - monthly</option>
-                          <option value="Offering 2" selected>Offering 2 : $2.00 USD - monthly</option>
-                          <option value="Offering 3">Offering 3 : $5.00 USD - monthly</option>
-                          <option value="Offering 4">Offering 4 : $10.00 USD - monthly</option>
-                          <option value="Offering 5">Offering 5 : $15.00 USD - monthly</option>
-                          <option value="Offering 6">Offering 6 : $20.00 USD - monthly</option>
-                          <option value="Offering 7">Offering 7 : $25.00 USD - monthly</option>
-                          <option value="Offering 8">Offering 8 : $50.00 USD - monthly</option>
-                          <option value="Offering 9">Offering 9 : $100.00 USD - monthly</option>
-                          <option value="Offering 10">Offering 10 : $200.00 USD - monthly</option>
-                        </select>
-                      </td>
-                    </tr>
-                  </table>
+  <!-- Custom Style Sheet -->
+  <link rel="stylesheet" href="css/main.css" />
+</head>
 
-                  <input type="hidden" name="currency_code" value="USD" /><br />
-                  <input
-                    type="image"
-                    src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribeCC_LG.gif"
-                    border="0"
-                    name="submit"
-                    alt="PayPal - The safer, easier way to pay online!"
-                  />
-                  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-                </form>
-                <br />
-                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                  <input type="hidden" name="cmd" value="_s-xclick" />
-                  <input type="hidden" name="hosted_button_id" value="X8G6UK5JNDDHA" />
-                  <input
-                    type="image"
-                    src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
-                    border="0"
-                    name="submit"
-                    title="PayPal - The safer, easier way to pay online!"
-                    alt="Donate with PayPal button"
-                  />
-                  <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-                </form>
-                <!-- END PAYPAL SUBSCRIPTION BOX -->
-              </div>
+<body class="text-center">
+  <!-- Header w/ video embed -->
+  <header class="container mt-5">
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe src="https://www.youtube-nocookie.com/embed/HaY98T6TDxw"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </header>
+
+  <!-- PAYMENTS -->
+  <section id="payments" class="container my-3 py-4">
+    <div class="row justify-content-center">
+      <div class="col-lg-6 overlay py-4">
+        <h2>Payment Offerings</h2>
+        <!-- NAV TABS -->
+        <ul class="nav nav-tabs justify-content-center" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#paypal" role="tab">PAYPAL</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#substar" role="tab">SUBSCRIBE STAR</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#crypto" role="tab">CRYPTO</a>
+          </li>
+        </ul>
+        <!-- TAB PANES and CONTENT -->
+        <div class="tab-content my-3">
+          <!-- paypal tab -->
+          <div class="tab-pane fade show active container" id="paypal" role="tabpanel" aria-labelledby="paypal-tab">
+            <!-- PAYPAL SUBSCRIPTION BOX  -->
+            <div id="paypal">
+              <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick" />
+                <input type="hidden" name="hosted_button_id" value="RA3FLVQZMH22G" />
+                <table align="center">
+                  <tr>
+                    <td>
+                      <input type="hidden" name="on0" value="Payment Offerings" />
+                      <h4 class="pb-3">PayPal</h4>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <select name="os0">
+                        <option value="Offering 1">Offering 1 : $1.00 USD - monthly</option>
+                        <option value="Offering 2" selected>Offering 2 : $2.00 USD - monthly</option>
+                        <option value="Offering 3">Offering 3 : $5.00 USD - monthly</option>
+                        <option value="Offering 4">Offering 4 : $10.00 USD - monthly</option>
+                        <option value="Offering 5">Offering 5 : $15.00 USD - monthly</option>
+                        <option value="Offering 6">Offering 6 : $20.00 USD - monthly</option>
+                        <option value="Offering 7">Offering 7 : $25.00 USD - monthly</option>
+                        <option value="Offering 8">Offering 8 : $50.00 USD - monthly</option>
+                        <option value="Offering 9">Offering 9 : $100.00 USD - monthly</option>
+                        <option value="Offering 10">Offering 10 : $200.00 USD - monthly</option>
+                      </select>
+                    </td>
+                  </tr>
+                </table>
+
+                <input type="hidden" name="currency_code" value="USD" /><br />
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribeCC_LG.gif" border="0"
+                  name="submit" alt="PayPal - The safer, easier way to pay online!" />
+                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+              </form>
+              <br />
+              <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick" />
+                <input type="hidden" name="hosted_button_id" value="X8G6UK5JNDDHA" />
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0"
+                  name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+              </form>
+              <!-- END PAYPAL SUBSCRIPTION BOX -->
             </div>
-            <!-- subscribe star tab -->
-            <div id="substar" class="tab-pane fade container" role="tabpanel" aria-labelledby="substar-tab">
-              <div class="substar">
-                <h4 class="pb-3">Subscribe Star</h4>
-                <iframe
-                  class="bg-light"
-                  src="graphics/substar.html"
-                  frameborder="0"
-                  width="100%"
-                  height="400"
-                  frameborder="0"
-                ></iframe>
-              </div>
+          </div>
+          <!-- subscribe star tab -->
+          <div id="substar" class="tab-pane fade container" role="tabpanel" aria-labelledby="substar-tab">
+            <div class="substar">
+              <h4 class="pb-3">Subscribe Star</h4>
+              <iframe class="bg-light" src="graphics/substar.html" frameborder="0" width="100%" height="400"
+                frameborder="0"></iframe>
             </div>
-            <!-- crypto tab -->
-            <div id="crypto" class="tab-pane fade container" role="tabpanel" aria-labelledby="crypto-tab">
-              <h4 class="pb-3">Crypto</h4>
-              <!-- CRYPTO ADDRESSES -->
-              <div class="crypto">
-                <div class="cryptoAddress py-2 my-2 d-flex align-items-center justify-content-center"  data-toggle="tooltip" title="Bitcoin">
-                  <i class="cf cf-btc pr-3""></i><span>1Crki9jLpVZSkRRXL42TXibVUQn7N3U7ow</span>
+          </div>
+          <!-- crypto tab -->
+          <div id="crypto" class="tab-pane fade container" role="tabpanel" aria-labelledby="crypto-tab">
+            <h4 class="pb-3">Crypto</h4>
+            <!-- CRYPTO ADDRESSES -->
+            <div class="crypto">
+              <div class="cryptoAddress py-2 my-2 d-flex align-items-center justify-content-center"
+                data-toggle="tooltip" title="Bitcoin">
+                <i class="cf cf-btc pr-3""></i><span>1Crki9jLpVZSkRRXL42TXibVUQn7N3U7ow</span>
                 </div>
-                <div class="cryptoAddress py-2 my-2 d-flex align-items-center justify-content-center"  data-toggle="tooltip" title="Bitcoin Cash">
+                <div class=" cryptoAddress py-2 my-2 d-flex align-items-center justify-content-center"
+                  data-toggle="tooltip" title="Bitcoin Cash">
                   <i class="cf cf-btc-alt pr-3"></i><span>qq7ap8sjjeq6elpenmt9d6manha5u5c7jynsvvrfzj</span>
-                </div>
-                <div class="cryptoAddress py-2 my-2 d-flex align-items-center justify-content-center"  data-toggle="tooltip" title="Ethereum">
-                  <i class="fab fa-ethereum pr-3"></i><span>0xe6398a9B2BA3aAAE7Bd28D56fBfFb6b759030082</span>
-                </div>
-                <div class="cryptoAddress py-2 my-2 d-flex align-items-center justify-content-center"  data-toggle="tooltip" title="Litecoin">
-                  <i class="cf cf-ltc pr-3"></i><span>LYYQ3jEP4UPwKa239cWVsaz3HDXoayQhJi</span>
-                </div>
-                <div class="cryptoAddress py-2 my-2 d-flex align-items-center justify-content-center"  data-toggle="tooltip" title="Ripple">
-                  <i class="cf cf-xrp pr-3"></i><span>rarFMMF4LNFMiZdKakxUUEHuv6PNAKJ2u8</span>
-                </div>
               </div>
-              <!-- END CRYPTO ADDRESSES -->
+              <div class="cryptoAddress py-2 my-2 d-flex align-items-center justify-content-center"
+                data-toggle="tooltip" title="Ethereum">
+                <i class="fab fa-ethereum pr-3"></i><span>0xe6398a9B2BA3aAAE7Bd28D56fBfFb6b759030082</span>
+              </div>
+              <div class="cryptoAddress py-2 my-2 d-flex align-items-center justify-content-center"
+                data-toggle="tooltip" title="Litecoin">
+                <i class="cf cf-ltc pr-3"></i><span>LYYQ3jEP4UPwKa239cWVsaz3HDXoayQhJi</span>
+              </div>
+              <div class="cryptoAddress py-2 my-2 d-flex align-items-center justify-content-center"
+                data-toggle="tooltip" title="Ripple">
+                <i class="cf cf-xrp pr-3"></i><span>rarFMMF4LNFMiZdKakxUUEHuv6PNAKJ2u8</span>
+              </div>
             </div>
+            <!-- END CRYPTO ADDRESSES -->
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- PRINTS -->
-    <section id="prints" class="container my-3 overlay">
-      <div class="row justify-content-center py-4">
-        <div class="col">
-          GET YOUR PREMIUM
-          <h2>Autographed Prints</h2>
-        </div>
+  <!-- PRINTS -->
+  <section id="prints" class="container my-3 overlay">
+    <div class="row justify-content-center py-4">
+      <div class="col">
+        GET YOUR PREMIUM
+        <h2>Autographed Prints</h2>
       </div>
-      <div class="row justify-content-center py-2 align-items-center">
-        <div class="col-sm my-3 sm-my-0">
-          <a href="https://www.etsy.com/listing/662003898/magog-of-morskar-art-print-11x17-signed?ref=shop_home_active_1" target="_blank">
+    </div>
+    <div class="row justify-content-center py-2 align-items-center">
+      <div class="col-sm my-3 sm-my-0">
+        <a href="https://www.etsy.com/listing/662003898/magog-of-morskar-art-print-11x17-signed?ref=shop_home_active_1"
+          target="_blank">
           <img class="img-fluid" src="graphics/artPrint.jpg" alt="Magog of Morskar Art Print" /></a>
-        </div>
-        <div class="mx-0">
-            <a href="https://www.etsy.com/shop/MorskarMerchant" target="_blank">
-              <i class="icon fas fa-shopping-cart"></i>
-            </a>
-          </div>
-        <div class="col-sm my-3 sm-my-0">
-            <a href="https://www.etsy.com/listing/694971261/magog-poe-autographed-photo-5x7?ref=shop_home_active_2&frs=1" target="_blank">
+      </div>
+      <div class="mx-0">
+        <a href="https://www.etsy.com/shop/MorskarMerchant" target="_blank">
+          <i class="icon fas fa-shopping-cart"></i>
+        </a>
+      </div>
+      <div class="col-sm my-3 sm-my-0">
+        <a href="https://www.etsy.com/listing/694971261/magog-poe-autographed-photo-5x7?ref=shop_home_active_2&frs=1"
+          target="_blank">
           <img class="img-fluid" src="graphics/artPhoto.jpg" alt="Magog & Poe Autographed Photo" />
-            </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- LINKS -->
-    <section id="links" class="container-fluid my-3">
-      <div class="row justify-content-center py-4">
-        <!-- magog swag -->
-        <a id="navLink" class="col-lg-5 py-4 px-4 my-3 mx-3 overlay d-flex justify-content-center align-items-center" href="https://teespring.com/stores/morskar-merchant?page=1" target="_blank">
-          <table>
-            <tr>
-              <td>
-                <i class="icon fas fa-tshirt pr-4 pr-4"></i>
-              </td>
-              <td>
-                Check out the latest <br />
-                <h3><strong>Magog swag</strong></h3>
-              </td>
-            </tr>
-          </table>
-        </a>
-        <!-- bitchute -->
-        <a id="navLink" class="col-lg-5 py-4 px-4 my-3 mx-3 overlay d-flex justify-content-center align-items-center" href="https://www.bitchute.com/channel/magogofmorskar/" target="_blank">
-          <table>
-            <tr>
-              <td>
-                  <i class="icon fas fa-tv pr-4"></i>
-              </td>
-              <td>
-                Worship your overlord<br />
-                <h3><strong>Bitchute</strong></h3>
-              </td>
-            </tr>
-          </table>
-        </a>
-        <!-- side quest discord -->
-        <a id="navLink" class="col-lg-5 py-4 px-4 my-3 mx-3 overlay d-flex justify-content-center align-items-center" href="https://discord.gg/GXdTEAY" target="_blank">
-          <table>
-            <tr>
-              <td>
-                  <i class="icon fab fa-discord pr-4"></i>
-              </td>
-              <td>
-                Chat with other worshippers<br />
-                <h3><strong>Side Quest Discord</strong></h3>
-              </td>
-            </tr>
-          </table>
-        </a>
-        <!-- morskar magic discord -->
-        <a id="navLink" class="col-lg-5 py-4 px-4 my-3 mx-3 overlay d-flex justify-content-center align-items-center" href="https://discord.gg/tCWHEj6" target="_blank">
-          <table>
-            <tr>
-              <td>
-                  <i class="icon fab fa-discord pr-4"></i>
-              </td>
-              <td>
-                Sacrifice your soul<br />
-                <h3><strong>Morskar Magic Discord</strong></h3>
-              </td>
-            </tr>
-          </table>
-        </a>
-        <!-- twitter -->
-        <a id="navLink" class="col-lg-5 py-4 px-4 my-3 mx-3 overlay d-flex justify-content-center align-items-center" href="https://twitter.com/magog_morskar" target="_blank">
-          <table>
-            <tr>
-              <td>
-                  <i class="icon fab fa-twitter pr-4"></i>
-              </td>
-              <td>
-                Get the latest updates<br />
-                <h3><strong>Twitter</strong></h3>
-              </td>
-            </tr>
-          </table>
-        </a>
-        <!-- facebook -->
-        <a id="navLink" class="col-lg-5 py-4 px-4 my-3 mx-3 overlay d-flex justify-content-center align-items-center" href="https://www.facebook.com/MagogofMorskar" target="_blank">
-          <table>
-            <tr>
-              <td>
-                  <i class="icon fab fa-facebook pr-4"></i>
-              </td>
-              <td>
-                Follow your overlord<br />
-                <h3><strong>Facebook</strong></h3>
-              </td>
-            </tr>
-          </table>
-        </a>
-        <!-- minds -->
-        <a id="navLink" class="col-lg-5 py-4 px-4 my-3 mx-3 overlay d-flex justify-content-center align-items-center" href="https://www.minds.com/MagogOfMorskar" target="_blank">
-          <table>
-            <tr>
-              <td>
-                  <i class="icon fas fa-lightbulb pr-4"></i>
-              </td>
-              <td>
-                Share your thoughts<br />
-                <h3><strong>Minds</strong></h3>
-              </td>
-            </tr>
-          </table>
         </a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- FOOTER AND COPYRIGHT -->
-    <footer class="footer">
-      <!-- <img src="graphics/MagogBanner.png" alt="Footer banner"> -->
-      <div class="copy">
-        <p>
-          <strong>Magog of Morskar</strong><br />
-          P.O. Box 448<br />
-          Vilonia, AR 72173<br />
-        </p>
-        <img src="graphics/avatar_new.jpg" alt="Magog's Avatar" style="width:128px;height:128px;" />
-        <p>
-          Copyright&nbsp;&copy;&nbsp;2019 by <a href="#">Magog of Morskar</a><br />
-          Designed by <a href="https://github.com/d00vy">d00vy</a>
-        </p>
-      </div>
-    </footer>
+  <!-- LINKS -->
+  <section id="links" class="container-fluid my-3">
+    <div class="row justify-content-center py-4">
+      <!-- magog swag -->
+      <a id="navLink" class="col-lg-5 py-4 px-4 my-3 mx-3 overlay d-flex justify-content-center align-items-center"
+        href="https://teespring.com/stores/morskar-merchant?page=1" target="_blank">
+        <table>
+          <tr>
+            <td>
+              <i class="icon fas fa-tshirt pr-4 pr-4"></i>
+            </td>
+            <td>
+              Check out the latest <br />
+              <h3><strong>Magog swag</strong></h3>
+            </td>
+          </tr>
+        </table>
+      </a>
+      <!-- bitchute -->
+      <a id="navLink" class="col-lg-5 py-4 px-4 my-3 mx-3 overlay d-flex justify-content-center align-items-center"
+        href="https://www.bitchute.com/channel/magogofmorskar/" target="_blank">
+        <table>
+          <tr>
+            <td>
+              <i class="icon fas fa-tv pr-4"></i>
+            </td>
+            <td>
+              Worship your overlord<br />
+              <h3><strong>Bitchute</strong></h3>
+            </td>
+          </tr>
+        </table>
+      </a>
+      <!-- side quest discord -->
+      <a id="navLink" class="col-lg-5 py-4 px-4 my-3 mx-3 overlay d-flex justify-content-center align-items-center"
+        href="https://discord.gg/GXdTEAY" target="_blank">
+        <table>
+          <tr>
+            <td>
+              <i class="icon fab fa-discord pr-4"></i>
+            </td>
+            <td>
+              Chat with other worshippers<br />
+              <h3><strong>Side Quest Discord</strong></h3>
+            </td>
+          </tr>
+        </table>
+      </a>
+      <!-- morskar magic discord -->
+      <a id="navLink" class="col-lg-5 py-4 px-4 my-3 mx-3 overlay d-flex justify-content-center align-items-center"
+        href="https://discord.gg/tCWHEj6" target="_blank">
+        <table>
+          <tr>
+            <td>
+              <i class="icon fab fa-discord pr-4"></i>
+            </td>
+            <td>
+              Sacrifice your soul<br />
+              <h3><strong>Morskar Magic Discord</strong></h3>
+            </td>
+          </tr>
+        </table>
+      </a>
+      <!-- twitter -->
+      <a id="navLink" class="col-lg-5 py-4 px-4 my-3 mx-3 overlay d-flex justify-content-center align-items-center"
+        href="https://twitter.com/magog_morskar" target="_blank">
+        <table>
+          <tr>
+            <td>
+              <i class="icon fab fa-twitter pr-4"></i>
+            </td>
+            <td>
+              Get the latest updates<br />
+              <h3><strong>Twitter</strong></h3>
+            </td>
+          </tr>
+        </table>
+      </a>
+      <!-- facebook -->
+      <a id="navLink" class="col-lg-5 py-4 px-4 my-3 mx-3 overlay d-flex justify-content-center align-items-center"
+        href="https://www.facebook.com/MagogofMorskar" target="_blank">
+        <table>
+          <tr>
+            <td>
+              <i class="icon fab fa-facebook pr-4"></i>
+            </td>
+            <td>
+              Follow your overlord<br />
+              <h3><strong>Facebook</strong></h3>
+            </td>
+          </tr>
+        </table>
+      </a>
+      <!-- minds -->
+      <a id="navLink" class="col-lg-5 py-4 px-4 my-3 mx-3 overlay d-flex justify-content-center align-items-center"
+        href="https://www.minds.com/MagogOfMorskar" target="_blank">
+        <table>
+          <tr>
+            <td>
+              <i class="icon fas fa-lightbulb pr-4"></i>
+            </td>
+            <td>
+              Share your thoughts<br />
+              <h3><strong>Minds</strong></h3>
+            </td>
+          </tr>
+        </table>
+      </a>
+    </div>
+  </section>
 
-    <!-- jquery CDN -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
+  <!-- FOOTER AND COPYRIGHT -->
+  <footer class="footer">
+    <!-- <img src="graphics/MagogBanner.png" alt="Footer banner"> -->
+    <div class="copy">
+      <p>
+        <strong>Magog of Morskar</strong><br />
+        P.O. Box 448<br />
+        Vilonia, AR 72173<br />
+      </p>
+      <img src="graphics/avatar_new.jpg" alt="Magog's Avatar" style="width:128px;height:128px;" />
+      <p>
+        Copyright&nbsp;&copy;&nbsp;2019 by <a href="#">Magog of Morskar</a><br />
+        Designed by: <a href="https://d00vy.com">d00vy.com</a><br />
+        <a href="https://github.com/d00vy/magogofmorskar"><i class="fab fa-github"></i></a>
+      </p>
+    </div>
+  </footer>
 
-    <!-- popperjs CDN -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
+  <!-- jquery CDN -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
 
-    <!-- boostrap js CDN -->
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
+  <!-- popperjs CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-91594404-3"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
+  <!-- boostrap js CDN -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-91594404-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-      gtag("config", "UA-91594404-3");
-    </script>
-  </body>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "UA-91594404-3");
+  </script>
+</body>
+
 </html>
